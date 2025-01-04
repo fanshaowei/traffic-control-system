@@ -15,7 +15,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 /**
  * @ClassName RateLimitAspect
- * @Description TODO
+ * @Description 注解在对应的请求方法上，做用户流量统计拦截
  * @Author fantasyfan
  * @Date 2025-01-04 2:58 a.m.
  */

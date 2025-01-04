@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 
 /**
  * @ClassName TrafficcontrolAnnotation
- * @Description TODO
+ * @Description 接口流量控制注解
  * @Author fantasyfan
  * @Date 2025-01-04 2:50 a.m.
  */

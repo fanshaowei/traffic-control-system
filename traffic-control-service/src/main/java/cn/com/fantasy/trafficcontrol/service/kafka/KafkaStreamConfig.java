@@ -1,16 +1,13 @@
 package cn.com.fantasy.trafficcontrol.service.kafka;
 
 import cn.com.fantasy.trafficcontrol.service.tokenbucket.TrafficConfig;
-import cn.com.fantasy.trafficcontrol.service.tokenbucket.UserTokenBucketManage;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.common.serialization.Serdes;
-import org.apache.kafka.common.utils.Bytes;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.StreamsConfig;
-import org.apache.kafka.streams.kstream.*;
+import org.apache.kafka.streams.kstream.KStream;
+import org.apache.kafka.streams.kstream.Materialized;
 import org.apache.kafka.streams.processor.WallclockTimestampExtractor;
-import org.apache.kafka.streams.state.KeyValueStore;
-import org.apache.kafka.streams.state.Stores;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
@@ -19,7 +16,6 @@ import org.springframework.kafka.annotation.KafkaStreamsDefaultConfiguration;
 import org.springframework.kafka.config.KafkaStreamsConfiguration;
 import org.springframework.kafka.config.StreamsBuilderFactoryBeanConfigurer;
 
-import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -29,7 +25,7 @@ import java.util.Map;
 
 /**
  * @ClassName KafkaStream
- * @Description TODO
+ * @Description kafka流处理配置类，包括流量统计处理
  * @Author fantasyfan
  * @Date 2025-01-03 1:48 p.m.
  */

@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @ClassName UserTokenBucketManage
- * @Description TODO
+ * @Description 用户令牌桶管理类
  * @Author fantasyfan
  * @Date 2025-01-02 3:42 p.m.
  */

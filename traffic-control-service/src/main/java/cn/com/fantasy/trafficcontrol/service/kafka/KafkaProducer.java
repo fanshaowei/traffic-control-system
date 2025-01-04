@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * @ClassName KafkaStreamProducer
- * @Description TODO
+ * @Description 消息生产
  * @Author fantasyfan
  * @Date 2025-01-02 11:30 p.m.
  */

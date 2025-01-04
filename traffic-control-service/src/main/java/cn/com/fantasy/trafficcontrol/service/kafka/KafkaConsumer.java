@@ -8,7 +8,7 @@ import org.springframework.kafka.annotation.KafkaListener;
 
 /**
  * @ClassName KafkaStreamProducer
- * @Description TODO
+ * @Description 消息消费，测试用的
  * @Author fantasyfan
  * @Date 2025-01-02 10:44 p.m.
  */
