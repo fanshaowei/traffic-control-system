@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f00152a-16e1-4a75-81c7-cb35bbbf9135" name="Changes" comment="" />
+    <list default="true" id="4f00152a-16e1-4a75-81c7-cb35bbbf9135" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -67,7 +74,8 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "18",
     "last_opened_file_path": "/Users/fantasyfan/Documents/ideaworkspace/java/traffic-control-system/traffic-control-web/src/main/resources",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "spring.configuration.checksum": "04e37b2d3136dbb9a8a35aa7a8d6c2ac",
     "vue.rearranger.settings.migration": "true"
   }
@@ -167,7 +175,8 @@
       <workItem from="1735803291371" duration="8296000" />
       <workItem from="1735819308652" duration="56901000" />
       <workItem from="1735975402596" duration="6815000" />
-      <workItem from="1735982905367" duration="612000" />
+      <workItem from="1735982905367" duration="1631000" />
+      <workItem from="1735984956139" duration="299000" />
     </task>
     <servers />
   </component>
