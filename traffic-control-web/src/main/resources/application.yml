@@ -1,0 +1,29 @@
+server:
+  port: 9300
+
+spring:
+  application:
+    name: trafficcontrolsys
+
+  kafka:
+    bootstrap-servers: "localhost:9092"
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: "user-traffic-control-group"
+      auto-offset-reset: earliest
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    streams:
+      application-id: ${spring.application.name}-app-id
+
+traffic:
+  # 请求限流周期，默认一分钟
+  requestLimitInterval: 60000
+  # 默认一分钟内限流 500
+  qpsLimit: 100
+
+  kafka-user-traffic-topic: user-traffic-control
+
+
