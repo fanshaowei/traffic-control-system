@@ -14,7 +14,7 @@ import java.time.format.DateTimeFormatter;
 
 /**
  * @ClassName ProcessingTimeProcessor
- * @Description 扩展对消息的处理
+ * @Description 扩展对消息的处理（预留）
  * @Author fantasyfan
  * @Date 2025-01-03 9:23 p.m.
  */

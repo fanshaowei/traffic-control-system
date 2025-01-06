@@ -14,6 +14,9 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 @Configuration
 public class UserTokenBucketManage {
+    /**
+     * 全局缓存用户的令牌
+     */
     @Getter
     private ConcurrentHashMap<String, TokenBucket> userTokenBuckets = new ConcurrentHashMap<String, TokenBucket>();
 
@@ -25,7 +28,7 @@ public class UserTokenBucketManage {
     }
 
     /**
-     * 处理用户请求
+     * 处理用户请求，并针对用户生成令牌桶和消耗
      * @param userId
      * @return
      */

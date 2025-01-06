@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * @ClassName TrafficConfig
- * @Description TODO
+ * @Description 流量监听配置
  * @Author fantasyfan
  * @Date 2025-01-02 3:50 p.m.
  */
@@ -26,6 +26,9 @@ public class TrafficConfig {
     @Value("${traffic.qpsLimit}")
     private Long qpsLimit;
 
+    /**
+     * 流量消息监听通道
+     */
     @Value("${traffic.kafka-user-traffic-topic}")
     private String kafkaUserTrafficTopic;
 }

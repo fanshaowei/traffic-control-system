@@ -34,6 +34,11 @@ import java.util.Map;
 @EnableKafka
 @EnableKafkaStreams
 public class KafkaStreamConfig {
+    /**
+     * 创建kafka stream配置类
+     * @param KafkaConfig
+     * @return
+     */
     @Bean(name = KafkaStreamsDefaultConfiguration.DEFAULT_STREAMS_CONFIG_BEAN_NAME)
     public KafkaStreamsConfiguration kStreamsConfigs(KafkaConfig KafkaConfig) {
         Map<String, Object> props = new HashMap<>();
@@ -54,6 +59,13 @@ public class KafkaStreamConfig {
         });
     }
 
+    /**
+     * 流式计算类
+     * 根据用户id分组实时统计计算
+     * @param kStreamBuilder
+     * @param trafficConfig
+     * @return
+     */
     @Bean
     public KStream<String, String> kStream(StreamsBuilder kStreamBuilder,
                                            TrafficConfig trafficConfig) {

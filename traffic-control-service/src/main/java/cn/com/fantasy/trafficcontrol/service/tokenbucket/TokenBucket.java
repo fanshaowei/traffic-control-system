@@ -37,6 +37,7 @@ public class TokenBucket {
         this.capacity = trafficConfig.getQpsLimit();
         this.tokens = trafficConfig.getQpsLimit();
         this.timeInterval = trafficConfig.getRequestLimitInterval();
+        // 初始化时，创建token时间为当前初始化时间
         this.lastCreateTimestamp = System.currentTimeMillis();
     }
 
@@ -55,6 +56,7 @@ public class TokenBucket {
 
     /**
      * 根据时间周期生成token
+     * 对比当前时间与上次生成token时间的间隔，占流量统计窗口的比例，计算需要补充的token数量
      */
     private void createTokens(){
         long current = System.currentTimeMillis();

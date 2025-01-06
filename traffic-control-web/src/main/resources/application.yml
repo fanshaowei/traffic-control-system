@@ -21,7 +21,7 @@ spring:
 traffic:
   # 请求限流周期，默认一分钟, 单位：毫秒
   requestLimitInterval: 60000
-  # 默认一分钟内限流 500
+  # 默认一分钟内限流 100
   qpsLimit: 100
   # 生产消息topic
   kafka-user-traffic-topic: user-traffic-control
