@@ -22,18 +22,18 @@ public class UserController {
     @TrafficControlAnnotation
     @GetMapping("/get")
     public ResponseEntity<String> getUser(@PathParam("userId") String userId){
-        return service.handleRequest(userId, RequestMethod.GET.name(), "/user/get");
+        return service.getUser(userId, RequestMethod.GET.name(), "/user/get");
     }
 
     @TrafficControlAnnotation
     @PostMapping("/add")
     public ResponseEntity<String> addUser(@PathParam("userId") String userId){
-        return service.handleRequest(userId, RequestMethod.POST.name(), "/user/add");
+        return service.addUser(userId, RequestMethod.POST.name(), "/user/add");
     }
 
     @TrafficControlAnnotation
     @PutMapping("/update")
     public ResponseEntity<String> updateUser(@PathParam("userId") String userId){
-        return service.handleRequest(userId, RequestMethod.PUT.name(), "/user/update");
+        return service.updateUser(userId, RequestMethod.PUT.name(), "/user/update");
     }
 }
